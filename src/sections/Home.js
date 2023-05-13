@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import CoverVideo from "../components/CoverVideo";
 
 const Section = styled.section`
   position: relative;
@@ -8,7 +9,13 @@ const Section = styled.section`
 `;
 
 const Home = () => {
-  return <Section>Home</Section>;
+  return (
+    <Section>
+      <CoverVideo />
+      <h1>Audio</h1>
+      <h1>Logo</h1>
+    </Section>
+  );
 };
 
 export default Home;
