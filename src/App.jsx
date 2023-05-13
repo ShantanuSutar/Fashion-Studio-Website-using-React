@@ -3,6 +3,7 @@ import GlobalStyles from "./styles/GlobalStyles";
 import { dark } from "./styles/Themes";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useRef } from "react";
+import Home from "./sections/Home";
 function App() {
   const containerRef = useRef(null);
 
@@ -25,7 +26,7 @@ function App() {
           containerRef={containerRef}
         >
           <main data-scroll-container ref={containerRef}>
-            Appp File
+            <Home />
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>
