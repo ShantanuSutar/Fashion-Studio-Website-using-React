@@ -1,6 +1,6 @@
 export const dark = {
   body: "#202020", //black shade
-  text: "fff",
+  text: "#fff",
   textRgba: "32,32,32",
   bodyRgba: "255,255,255",
 
