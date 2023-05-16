@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
-const NavContainer = styled.div`
+const NavContainer = styled(motion.div)`
   width: 100vw;
   z-index: 6;
   position: absolute;
@@ -13,7 +14,7 @@ const NavContainer = styled.div`
   transition: all 0.3s ease;
 `;
 
-const MenuItems = styled.ul`
+const MenuItems = styled(motion.ul)`
   position: relative;
   height: ${(props) => props.theme.navHeight};
   background-color: ${(props) => props.theme.body};
@@ -27,7 +28,7 @@ const MenuItems = styled.ul`
   padding: 0 10rem;
 `;
 
-const MenuBtn = styled.li`
+const MenuBtn = styled(motion.li)`
   background-color: rgba(255, 255, 255, 0.7);
   list-style-type: none;
   color: #202020;
@@ -52,7 +53,7 @@ const MenuBtn = styled.li`
   cursor: pointer;
 `;
 
-const MenuItem = styled.li`
+const MenuItem = styled(motion.li)`
   text-transform: uppercase;
   color: #fff;
 `;
@@ -60,13 +61,59 @@ const MenuItem = styled.li`
 const Navbar = () => {
   const [click, setClick] = useState(false);
   return (
-    <NavContainer click={click}>
-      <MenuItems>
+    <NavContainer click={click}
+    initial={{
+      y: "-100%"
+    }}
+    animate={{
+      y:0
+    }}
+    transition={{
+      duration: 2, delay: 2
+    }}
+    >
+      <MenuItems 
+      drag="y"
+      dragConstraints={{
+        top:0,
+        bottom: 70,
+      }}
+      dragElastic={0.05}
+      dragSnapToOrigin
+      >
         <MenuBtn onClick={() => setClick(!click)}>Menu</MenuBtn>
-        <MenuItem>Home</MenuItem>
-        <MenuItem>About</MenuItem>
-        <MenuItem>Shop</MenuItem>
-        <MenuItem>new arrival</MenuItem>
+        <MenuItem 
+        whileHover={{
+          scale:1.1, y:-5
+        }}
+        whileTap={{
+           scale: 0.9, Y:0
+        }}
+        >Home</MenuItem>
+        <MenuItem 
+        whileHover={{
+          scale:1.1, y:-5
+        }}        
+        whileTap={{
+           scale: 0.9, Y:0
+        }}
+        >About</MenuItem>
+        <MenuItem 
+        whileHover={{
+          scale:1.1, y:-5
+        }}
+        whileTap={{
+          scale: 0.9, Y:0
+        }}
+        >Shop</MenuItem>
+        <MenuItem 
+        whileHover={{
+          scale:1.1, y:-5
+        }}
+        whileTap={{
+          scale: 0.9, Y:0
+        }}
+        >new arrival</MenuItem>
       </MenuItems>
     </NavContainer>
   );
