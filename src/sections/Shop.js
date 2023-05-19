@@ -47,6 +47,23 @@ p{
 }
 `
 
+const Right = styled.div`
+position: absolute;
+left: 35%;
+padding-left: 30%; 
+min-height: 100vh;
+
+background-color: ${props => props.theme.grey};
+width: 65%;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+
+h1{
+    width: 5rem;
+    margin: 0 2rem;
+}
+`
 
 const Shop = () => {
   return (
@@ -67,7 +84,16 @@ Not only clothes but we also provide unique Jewellery as well.
 It is great for us to carry our new clothes all around the country and look different.
            </p>
         </Left>
-        
+        <Right>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+        </Right>
     </Section>
   )
 }
