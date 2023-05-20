@@ -1,4 +1,6 @@
-import React from 'react';
+import gsap from 'gsap';
+import  ScrollTrigger  from 'gsap/ScrollTrigger';
+import React, { useLayoutEffect, useRef } from 'react';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -54,7 +56,7 @@ padding-left: 30%;
 min-height: 100vh;
 
 background-color: ${props => props.theme.grey};
-width: 65%;
+// width: 65%;
 display: flex;
 justify-content: flex-start;
 align-items: center;
@@ -66,8 +68,63 @@ h1{
 `
 
 const Shop = () => {
+    gsap.registerPlugin(ScrollTrigger);
+    const ref = useRef(null);
+    const horizantalRef = useRef(null);
+
+    useLayoutEffect(() => {
+        let element = ref.current;
+        let scrollingElement =  horizantalRef.current;
+
+        let pinWrapWidth = scrollingElement.offsetWidth;
+        
+        let t1 = gsap.timeline();
+
+        setTimeout(() => {
+            t1.to(element , {
+                scrollTrigger: {
+                    trigger: element,
+                    start: 'top top',
+                    end: pinWrapWidth,
+                    scroller: '.App', // locomotive element
+                    scrub: true,
+                    pin: true,
+                    markers: true,
+                },
+                // we have to increase the scrolling height of this section same as the scrolling element width
+
+                height: `${scrollingElement.scrollWidth}px`,
+                ease: "none",
+            })
+
+            t1.to(scrollingElement , {
+                scrollTrigger: {
+                    trigger: scrollingElement,
+                    start: 'top top',
+                    end: pinWrapWidth,
+                    scroller: '.App', // locomotive element
+                    scrub: true,
+                    pin: true,
+                    markers: true,
+                },
+                // we have to increase the scrolling height of this section same as the scrolling element width
+
+                x: -pinWrapWidth,
+                ease: "none",
+            })
+
+            ScrollTrigger.refresh();
+        }, 1000)
+
+        
+
+        return () => {
+
+        }
+    }, [])
+
   return (
-    <Section>
+    <Section ref={ref}>
         <Title data-scroll data-scroll-speed="-1">
             New Collection
         </Title>
@@ -84,7 +141,15 @@ Not only clothes but we also provide unique Jewellery as well.
 It is great for us to carry our new clothes all around the country and look different.
            </p>
         </Left>
-        <Right>
+        <Right ref={horizantalRef}>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
+            <h1>img</h1>
             <h1>img</h1>
             <h1>img</h1>
             <h1>img</h1>

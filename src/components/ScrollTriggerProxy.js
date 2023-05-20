@@ -8,7 +8,7 @@ import { useLocomotiveScroll } from 'react-locomotive-scroll';
 const ScrollTriggerProxy = () => {
     // First let's get instance of locomotive scroll
 
-    const scroll = useLocomotiveScroll();
+    const { scroll } = useLocomotiveScroll();
 
     //Register scroll trigger plugin
     gsap.registerPlugin(ScrollTrigger);
@@ -27,14 +27,12 @@ const ScrollTriggerProxy = () => {
                 getBoundingClientRect() {
                   return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight};
                 },
-                pinType: document.querySelector(element).style.transform ? "transform" : "fixed",
+                pinType: element.style.transform ? "transform" : "fixed",
               });
         }
 
         return () => {
-            ScrollTrigger.addEventListener("refresh", () => {
-                scroll?.update()
-            })
+            ScrollTrigger.addEventListener("refresh", () =>  scroll?.update() )
             ScrollTrigger.refresh()
         }
 
