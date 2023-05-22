@@ -212,7 +212,7 @@ let t1= gsap.timeline();
   }, []);
 
   return (
-    <Section  ref={ref} id="fixed-target" className="new-arrival">
+    <Section  ref={ref} id="fixed-target" className="new-arrival" >
       <Overlay />
 
       <Title
