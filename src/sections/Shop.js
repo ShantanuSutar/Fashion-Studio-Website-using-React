@@ -141,7 +141,7 @@ const Shop = () => {
                     scroller: '.App', // locomotive element
                     scrub: true,
                     pin: true,
-                    markers: true,
+                    // markers: true,
                 },
                 // we have to increase the scrolling height of this section same as the scrolling element width
 
@@ -157,7 +157,7 @@ const Shop = () => {
                     scroller: '.App', // locomotive element
                     scrub: true,
                     
-                    markers: true,
+                    // markers: true,
                 },
                 // we have to increase the scrolling height of this section same as the scrolling element width
 
@@ -171,7 +171,9 @@ const Shop = () => {
         
 
         return () => {
-
+            // Let's clear instances 
+            t1.kill();
+            ScrollTrigger.kill()
         }
     }, [])
 
@@ -204,7 +206,6 @@ It is great for us to carry our new clothes all around the country and look diff
             <Product img={img8} title='Jewellery' />
             <Product img={img9} title='Watches' />
             <Product img={img10} title='Special Edition' />
-            
         </Right>
     </Section>
   )

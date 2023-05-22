@@ -12,7 +12,7 @@ const Section = styled.section`
   display: flex;
 
   margin: 0 auto
-`;
+`
 
 const Title = styled.h1`
 font-size: ${props => props.theme.fontBig};
@@ -32,7 +32,6 @@ font-weight: 300;
 position: relative;
 z-index: 5;
 margin-top: 20%;
-
 `
 
 const Right = styled.div`
