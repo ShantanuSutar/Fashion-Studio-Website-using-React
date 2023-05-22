@@ -11,6 +11,10 @@ justify-content: center;
 align-items: center;
 
 position: relative;
+
+@media (max-width: 48em){
+  width: 90vw;
+} 
 `
 
 const Container = styled.div`
@@ -20,6 +24,10 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
+
+@media (max-width: 64em){
+    justify-content: center;
+}
 `
 
 const BannerComponent = styled.h1`
@@ -30,6 +38,22 @@ white-space: no-wrap;
 text-transform: uppercase;
 line-height: 1;
 margin-top: 2rem;
+
+@media (max-width: 70em){
+    font-size: ${(props) => props.theme.fontxxl};
+}
+@media (max-width: 64em){
+    margin: 1rem 0;
+}
+ 
+@media (max-width: 48em){
+    font-size: ${(props) => props.theme.fontxl};
+    margin: 0.5rem 0;
+
+}
+@media (max-width: 30em){
+    font-size: ${(props) => props.theme.fontlg};
+}
 
 span{
   display: block;

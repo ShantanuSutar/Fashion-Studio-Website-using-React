@@ -31,7 +31,7 @@ const Overlay = styled.div`
   transform: translate(-50%, -50%);
   width: 30vw;
   height: 90vh;
-  box-shadow: 0 0 0 4vw ${(props) => props.theme.text};
+  box-shadow: 0 0 0 5vw ${(props) => props.theme.text};
   border: 3px solid black;
 
   z-index: 11;
@@ -212,7 +212,7 @@ let t1= gsap.timeline();
   }, []);
 
   return (
-    <Section  ref={ref} id="fixed-target" className="new-arrival" >
+    <Section  ref={ref} id="fixed-target" className="new-arrival">
       <Overlay />
 
       <Title
