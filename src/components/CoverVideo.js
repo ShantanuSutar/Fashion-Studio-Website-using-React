@@ -82,7 +82,7 @@ const container = {
     opacity: 1,
 
     transition: {
-      delayChildren: 5,   // 2
+      delayChildren: 5, // 2
       staggerChildren: 0.3,
     },
   },
@@ -136,11 +136,16 @@ const CoverVideo = () => {
             e
           </motion.h1>
         </div>
-        <motion.h2 variants={item} data-scroll data-scroll-delay="0.04" data-scroll-speed="2">
+        <motion.h2
+          variants={item}
+          data-scroll
+          data-scroll-delay="0.04"
+          data-scroll-speed="2"
+        >
           Inspire. Create. Belive
         </motion.h2>
       </Title>
-      <video src={MainVideo} type="video/mp4" autoPlay loop />
+      <video src={MainVideo} type="video/mp4" autoPlay loop muted />
     </VideoContainer>
   );
 };
