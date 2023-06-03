@@ -1,90 +1,79 @@
-# 🔥Build a Stunning Fashion Studio Website with React JS [ Locomotive Scroll + GSAP + Framer Motion ]
 
-![GitHub stars](https://img.shields.io/github/stars/codebucks27/wibe-studio-starter-files?style=social&logo=ApacheSpark&label=Stars)&nbsp;&nbsp;
-![GitHub forks](https://img.shields.io/github/forks/codebucks27/wibe-studio-starter-files?style=social&logo=KashFlow&&label=Forks)&nbsp;&nbsp;
-![Github Followers](https://img.shields.io/github/followers/codebucks27.svg?style=social&label=Follow)&nbsp;&nbsp;<br />
+# Wibe Fashion Studio
 
-This repository contains starter code for Fashion Studio Website in ReactJS. <br />
+Wibe: A Fashion Website Built with React, GSAP, Styled Components, Framer Motion, and Locomotive Scroll
 
-For the **Demo** and **Final Code** checkout this link👇: <br />
-<a href="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap" target="_blank">🔥Build a Stunning Fashion Studio Website with React JS</a> ![YouTube Video Views](https://img.shields.io/youtube/views/Ra1Fsa9YJCk?style=social) </br >
+To enhance the visual appeal of Wibe, we utilize GSAP (GreenSock Animation Platform). GSAP is a powerful animation library that enables smooth and fluid animations, making the website come to life. With GSAP, we can create captivating transitions, visually stunning effects, and engaging animations, elevating the overall user experience.
 
+Styled Components is another integral part of Wibe's development stack. It is a CSS-in-JS library that allows us to write CSS code directly within our React components. This approach offers numerous advantages, such as better organization and encapsulation of styles, dynamic theming, and improved performance. By using Styled Components, we can ensure a consistent and visually appealing design throughout the entire website.
 
-### Images of The Fashion Studio Website:
-![HOME](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-Home-Desktop.png)
-![ABOUT](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-About-Desktop.png)
-![HOME](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-Home-Moblie.png)
-![ABOUT](https://github.com/codebucks27/wibe-studio-starter-files/blob/main/Wibe-About-Mobile.png)
+Framer Motion further enriches the user experience on Wibe. It is a powerful animation library specifically designed for React applications. Framer Motion provides an easy-to-use API for creating fluid and responsive animations, including gestures, transitions, and scroll-based effects. With Framer Motion, we can captivate users with delightful interactions and create an immersive environment that showcases the fashion products in an engaging manner.
 
+Locomotive Scroll is the final piece of the puzzle that adds a touch of elegance to the Wibe website. It is a smooth scrolling library that enhances the scrolling experience with its lightweight and performant nature. Locomotive Scroll allows for precise control over scrolling behavior, creating a seamless and intuitive navigation system that seamlessly integrates with the stunning animations and transitions throughout the site.
 
-### Resources Used in This Project
+## Live Url 
+Link - https://wibe-fashion-studio.netlify.app/
+## Screenshots
 
-Fonts: https://fontsource.org/ <br />
+![App Screenshot](https://i.postimg.cc/3JVTcz7Y/Screenshot-254.png)
 
-### External Libraries used in this project: 
+![App Screenshot](https://i.postimg.cc/43bRndcx/Screenshot-255.png)
 
-[styled-components](https://styled-components.com/docs/advanced) <br />
-[GSAP](https://greensock.com/gsap/) <br />
-[Framer-mMtion](https://www.framer.com/motion/) <br />
-[React-Locomotive-Scroll](https://www.npmjs.com/package/react-locomotive-scroll) <br />
-[Locomotive-Scroll](https://www.npmjs.com/package/locomotive-scroll) <br />
+![App Screenshot](https://i.postimg.cc/cHxy3S7M/Screenshot-256.png)
 
-### All The Resources Used in This Website Are from👇:
-
-Walking Girl Video:<br />
-Video by cottonbro from Pexels [https://www.pexels.com/@cottonbro]<br />
-
-Images:<br />
-
-Ring: Photo by Arif Syuhada from Pexels<br />
-https://www.pexels.com/@arifsyd15<br />
-
-Rings: Photo by cottonbro from Pexels<br />
-https://www.pexels.com/@cottonbro<br />
-
-Earings: Photo by say straight from Pexels<br />
-https://www.pexels.com/@say-straight-1400349<br />
-
-White Tee:Photo by cottonbro from Pexels<br />
-https://www.pexels.com/@cottonbro<br />
-
-black t-shirt girl: Photo by Lena Hsvl from Pexels<br />
-https://www.pexels.com/@lenaneva<br />
-
-Red girl: Photo by Yaroslava Borz from Pexels<br />
-https://www.pexels.com/@yaroslava-borz-126286496<br />
-
-Ethnic Wear: Photo by Artem Beliaikin from Pexels<br />
-https://www.pexels.com/@belart84<br />
-
-Suit: Photo by Chloe from Pexels<br />
-https://www.pexels.com/@chloekalaartist<br />
-
-cap male: Photo by cottonbro from Pexels<br />
-https://www.pexels.com/@cottonbro<br />
-
-Watches: Photo by Mister Mister from Pexels<br />
-https://www.pexels.com/@bemistermister<br />
-
-Denim: Photo by Denis Zagorodniuc from Pexels<br />
-https://www.pexels.com/@imdennyz<br />
-
-Jacket: Photo by Simon Robben from Pexels<br />
-https://www.pexels.com/@simon-robben-55958<br />
-
-Yellow T-shirt:Photo by RAUL REYNOSO from Pexels<br />
-https://www.pexels.com/@raulkingr<br />
-
-Yellow Dress: Photo by Godisable Jacob from Pexels<br />
-https://www.pexels.com/@godisable-jacob-226636<br />
+![App Screenshot](https://i.postimg.cc/2SWDRT8v/Screenshot-257.png)
 
 
 
-### Famous Quotes Used:
-"Fashion is the armour to survive the reality of everyday life."<br />
--- bill cunningham
+## Features
 
-"One is never over-dressed or under-dressed with a Little Black Dress." —Karl Lagerfeld<br />
+- Stunning Visuals
+- Responsive and Intuitive UI
+- Seamless Navigation with Locomotive Scroll
+- Dynamic Animations with GSAP and framer motion
+- Styled components 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Tech Stack
+
+- React
+- Styled components
+- GSAP
+- Framer motion
+- Locomotive Scroll
+
+
+
+
+## Lessons Learned
+
+- Encapsulation of styles with Styled components
+- Animations using GSAP and Framer motion
+- Scrolling Effects with Locomotive Scroll
+## Used By
+
+This project is used by Friends and Family ❤
+
+# Hi, I'm Shantanu! 👋
+
+A Web-Dev enthusiast currently pursuing IT degree at PCCOE, Pune.
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shantanu-sutar-425591238/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ShantanuSutar17)
+
+
+## 🚀 About Me
+👦 I'm a Front-End Web developer...
+
+👩‍💻 I'm currently working on Personal Projects
+
+🧠 I'm currently learning React
+
+👯‍♀️ I'm looking to collaborate on Web Development
+
+💬 Ask me about Frontend
+
+📫 How to reach me shantanusutar17@gmail.com
+
+⚡️ Fun fact Whatever happens, happens ...
